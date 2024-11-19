@@ -5,8 +5,11 @@ const UserSchema = mongoose.Schema(
     name: {
       type: String,
     },
-    score: {
+    point: {
       type: Number,
+    },
+    isSingle: {
+      type: Boolean,
     },
   },
   {
