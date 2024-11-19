@@ -10,7 +10,7 @@ const userRoutes = require("./routes/userRoute");
 // Middleware cơ bản để parse JSON
 const allowedOrigins = [
   "http://localhost:3000",
-  // "https://daovang-react.onrender.com",
+  "https://chiec-non-ky-dieu.onrender.com",
 ];
 
 app.use(express.json());
