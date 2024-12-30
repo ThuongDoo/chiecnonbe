@@ -23,4 +23,9 @@ const getScore = async (req, res) => {
   res.status(200).json({ users });
 };
 
-module.exports = { saveScore, getScore };
+const deleteScore = async (req, res) => {
+  const users = await User.deleteMany({});
+  res.status(200).json({ users });
+};
+
+module.exports = { saveScore, getScore, deleteScore };
